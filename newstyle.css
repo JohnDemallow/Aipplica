@@ -1,5 +1,5 @@
 body {
-    font: 28px Arial, sans-serif;
+    font: 28px Verdana, sans-serif;
     background-color: Black;
 }
 h1 {
@@ -12,18 +12,18 @@ h1 {
 }
 p {
   color: white ;
-  font: 24px Arial, sans-serif;
+  font: 24px Verdana, sans-serif;
   font-style: italic;
   text-align: center;
   }
 footer {
   color: white;
-  font: 20px Arial, sans-serif;
+  font: 20px Verdana, sans-serif;
   text-align: center;
   }
 address {
   color: white;
-  font: 20px Arial, sans-serif;
+  font: 20px Verdana, sans-serif;
   text-align: center;
   }
 

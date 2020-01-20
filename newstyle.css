@@ -1,29 +1,35 @@
 body {
-    font: 28px Verdana, sans-serif;
+    font: 2vw Verdana, sans-serif;
     background-color: Black;
 }
 h1 {
   color: white;
   background-color: Black;
-  border: 2px solid black;
-  font-size: 3em
+  border: 1.5px solid black;
+  font-size: 1vw
   padding: 3px;
   text-align: center;
 }
 p {
   color: white ;
-  font: 24px Verdana, sans-serif;
+  font: 1.5vw Verdana, sans-serif;
+  font-style: italic;
+  text-align: center;
+  }
+#copyright {
+  color: white ;
+  font: 1vw Verdana, sans-serif;
   font-style: italic;
   text-align: center;
   }
 footer {
   color: white;
-  font: 20px Verdana, sans-serif;
+  font: 1vw Verdana, sans-serif;
   text-align: center;
   }
 address {
   color: white;
-  font: 20px Verdana, sans-serif;
+  font: 1vw Verdana, sans-serif;
   text-align: center;
   }
 

@@ -12,6 +12,8 @@
   #s1 h1 { font-size: 2vw; float: left; width: 30vw }
   #s1 ul { font-size: 1.5vw; float: left; width: 50vw}
   p  { text-align: center; font-size: 1.5vw; }
+  .img-container { float:left;width:25%;padding:5px }
+  .clearfix::after { content:" "; clear:both;}
   section:after { content: ""; display: table; clear: both; }
   #nav { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: light blue; }
   #nav li { float: left; }
@@ -31,7 +33,20 @@
    </section>
     <br> <br> <br>
     <p><b>Spectrometry Modules </b></p>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> 
+    <div class="clearfix">
+      <div class="img-container">
+      </div>
+      <div class="img-container">
+		<a href="products.html"</a>
+		<img src="APSpectrometer-0p1.jpg" alt="AP190 Module" style="width:200px;height:200px" >
+      </div>
+      <div class="img-container">
+		<a href="products.html"</a>
+		<img src="FIber-Coupled-LED-Module.jpg" alt="Fiber-Coupled-LED-Module"  style="width:200px;height:200px">
+      </div>
+    </div>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
     <br> <br> <br> <br> <br> <br> <br> <br> 
     <footer>
@@ -40,4 +55,3 @@
     </footer>
   </body>
 </html>
-

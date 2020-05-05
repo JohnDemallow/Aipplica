@@ -1,92 +1,137 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="Aipplica Spectroscopy Products Page" content="About Aipplica Spectroscopy Products">
-    <meta name="keywords" content="Spectroscopy, Artificial Intelligence,Internet of Things">
-    <meta name="author" content="Rajan Walia">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <style>
-  body { background-image: url(Rainbow-2.jpeg); color: white; background-repeat: no-repeat; background-size: cover;}
-  #s1 h1 { font-size: 2vw; float: left; width: 30vw }
-  #s1 ul { font-size: 1.5vw; float: left; width: 50vw}
-  p  { font-size: 1.5vw; }
-  #features {font-size: 1.2vw; }
-  #s2 ul { width 40%;  font-size: 1.2vw; style:list-style-type:disc; float: left} 
-  #s2 img { width: 20%; height: auto; float: left;}
-  #s3 ul { width 40%;  font-size: 1.2vw; style:list-style-type:disc; float: left} 
-  #s3 img { width: 20%; height: auto; float: left;}
-  section:after { content: ""; display: table; clear: both; }
-  #nav { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: light blue; }
-  #nav li { float: left; }
-  #nav li a { display: block; color: white; text-align: center; padding: 1vw; text-decoration: none; }
-  #nav li a:hover { background-color: blue; }
-  </style>
-  <body>
-  <section id="s1">
-    <h1>AIpplica Systems Pte Ltd </h1>
-    <ul id="nav">
-  	<li><a href="index.html">Home</a></li>
-  	<li><a href="products.html">Products</a></li>
-  	<li><a href="applications.html">Applications</a></li>
-  	<li><a href="contact.html">Contact</a></li>
-  	<li><a href="about.html">About</a></li>
-   </ul>
-   </section>
-    <br>
-    <p><b>Spectrometry Modules from AIpplica Systems</b></p>
-    <p id="features"><b>Features</b></p>
-    <section id="s2">
-    <img src="APSpec0p1.jpg" alt="Model AP1901">
-    <ul>
-	<li>Modified Fastie-Ebert design.</li>
-	<li>Higher Order Rejection Filter.</li>
-	<li>Low cost CMOS/CCD Photodetector.</li>
-	<ul>
-		<li>Detector wavelength range: 350nm  - 1000nm.</li>
-		<li>Integrated 10MHz 8 bit A/D converter.</li>
-		<li>300 electrons/LSB.</li>
-	</ul><br /><br /><br />
-	<li>USB-C Interface</li>
-	<li>Wireless WiFi Microcontroller</li>
-	<li>SMA 905 fibre optic input connector</li>
-	<li>Readout Software Spectrum processing & display.</li>
-	<li>Factory Calibrated with Standard Mercury lamp.</li>
-	<li>Small Footprint.</li>
-	<li>Suitable for a wide range of commercial applications: from Industrial, Bio, Pharma., F & B to  Security.</li>
-	<li>Customizable for different range, resolution and interface.</li>
-	<ul>
-		<li>Model "Rungeen-1901" Range 400nm - 900nm, with ~5nm resolution.</li>
-		<li>Model "Raduga-2010" Range 400nm - 650nm, with ~3nm resolution.</li>
-	</ul>
-    </ul> 
-    </section>
-    <section id="s3">
-    <img alt="Model RS2001" src="FIber-Coupled-LED-Module.jpg">
-    <ul>
-	<li>Programmable Fiber coupled LED light source.</li>
-	<li>Low cost Light Emitting Diodes.</li>
-	<ul>
-		<li>Discrete LED wavelength range: 400nm-700nm.</li>
-		<li>Programmable Intensity.</li>
-	</ul><br /><br /><br />
-	<li>USB-C Interface</li>
-	<li>SMA 905 fibre optic output connector</li>
-	<li style="color:red">Software Controller discrete wavelength and intensity</li>
-	<li style="color:red">Small Footprint.</li>
-	<li style="color:red">Suitable for a wide range of commercial applications: from Industrial, Bio, Pharma., F & B to  Security.</li>
-	<li style="color:red">LED wavelengths are Customizable.</li>
-	<ul>
-		<li style="color:red">Model "Roshni-2001" Range 400nm - 700nm, with ~20nm-30nm FWHM/LED wavelength.</li>
-	</ul>
-    </ul> 
-    </section>
-    <br> <br> <br> <br> <br> <br><br><br>
-    <footer>
-      <br> <br>
-      <p style="font:verdana;font-size:1vw;text-align:center">©Copyright 2020 by AIpplica Systems Pte Ltd All Rights Reserved.</p>
-    </footer>
-  </body>
-</html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="Aipplica Spectroscopy Home Page" content="About Aipplica Spectroscopy Products">
+<meta name="keywords" content="Spectroscopy, Artificial Intelligence,Internet of Things">
+<meta name="author" content="Rajan Walia">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* body { font-family: Arial, Helvetica, sans-serif; } */
+body { background-image: url(Rainbow-2.jpeg); color: white; background-repeat: no-repeat; background-size: cover;}
 
+.header { float: left; width: 28%; }
+section {overflow: auto}
+section:after { content: ""; clear: left }
+
+.navbar { overflow: hidden; float:left; width:68% }
+.navbar a { float: left; font-size: 16px; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+.dropdown { float: left; overflow: hidden; }
+.dropdown .dropbtn { font-size: 16px;  border: none; outline: none; color: white; padding: 14px 16px; background-color: inherit; font-family: inherit; margin: 0; }
+.navbar a:hover, .dropdown:hover .dropbtn { background-color: blue; }
+.dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+.dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+.dropdown-content a:hover { background-color: #ddd; }
+.dropdown:hover .dropdown-content { display: block; }
+
+
+table { font-family: arial, sans-serif; border-collapse: collapse; width: 50%; margin-left: 25% }
+td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; text-align: center }
+tr:nth-child(even) { background-color: #aaaaaa; }
+
+</style>
+</head>
+<body>
+
+<section>
+  <div class="header"> <h3> AIpplica Systems Pte Ltd <h3></div>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products </button>
+      <div class="dropdown-content">
+        <a href="products.html#APS-1910">APS-1910</a>
+        <a href="products.html#APS-2030">APS-2030</a>
+        <a href="products.html#LS-4730">LS-4730</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Applications </button>
+      <div class="dropdown-content">
+        <a href="applications.html#A1">Food and Beverage</a>
+        <a href="applications.html#A2">Cosmetics</a>
+        <a href="applications.html#A3">Semiconductor Manufacturing</a>
+      </div>
+    </div> 
+    <a href="contact.html">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">About </button>
+      <div class="dropdown-content">
+        <a href="about.html#History">History</a>
+        <a href="about.html#Vision">Vision</a>
+        <a href="about.html#Mission">Mission</a>
+        <a href="about.html#Values">Values</a>
+        <a href="about.html#Business">Business</a>
+      </div>
+    </div> 
+  </div>
+</section>
+
+<p>Spectrometry Modules.</p>
+
+<div id="APS-1910">
+  <h2>Technical Specifications APS-1910: VIS Range Spectrometer</h2>
+  <table>
+    <tr> <th>Parameter</th> <th>Specification</th> </tr>
+    <tr> <td>Spectral Range</td> <td>400nm - 650nm</td> </tr>
+    <tr> <td>Image Sensor</td> <td>CMOS</td> </tr>
+    <tr> <td>Number of Pixels</td> <td>100</td> </tr>
+    <tr> <td>ADC resolution </td> <td>8 bits</td> </tr>
+    <tr> <td>Peak Sensitivity </td> <td>650nm</td> </tr>
+    <tr> <td>Wavelength Accuracy </td> <td>5nm</td> </tr>
+    <tr> <td>SNR </td> <td>250/1</td> </tr>
+    <tr> <td>Dynamic Range </td> <td>~50 dB</td> </tr>
+    <tr> <td>Integration time </td> <td>~50us-~1sec</td> </tr>
+    <tr> <td>Order Sorting filter </td> <td>Yes</td> </tr>
+    <tr> <td>Fiber Connector </td> <td>SMA905</td> </tr>
+    <tr> <td>Interface </td> <td>USB-C</td> </tr>
+    <tr> <td>Calibration </td> <td>Hg Cal. Source</td> </tr>
+  </table>
+</div>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+<div id="APS-2030">
+  <h2>Technical Specifications APS-2030</h2>
+  <table>
+    <tr> <th>Parameter</th> <th>Specification</th> </tr>
+    <tr> <td>Spectral Range</td> <td>250 - 500nm</td> </tr>
+    <tr> <td>Image Sensor</td> <td>CCD</td> </tr>
+    <tr> <td>Number of Pixels</td> <td>1500</td> </tr>
+    <tr> <td>ADC resolution </td> <td>16 bits</td> </tr>
+    <tr> <td>Peak Sensitivity </td> <td>700nm</td> </tr>
+    <tr> <td>Wavelength Accuracy </td> <td>5nm</td> </tr>
+    <tr> <td>SNR </td> <td>1000/1</td> </tr>
+    <tr> <td>Dynamic Range </td> <td>~84 dB</td> </tr>
+    <tr> <td>Integration time </td> <td>~50us-~1sec</td> </tr>
+    <tr> <td>Order Sorting filter </td> <td>Yes</td> </tr>
+    <tr> <td>Fiber Connector </td> <td>SMA905</td> </tr>
+    <tr> <td>Interface </td> <td>USB-C</td> </tr>
+    <tr> <td>Calibration </td> <td>Hg Cal. Source</td> </tr>
+  </table>
+</div>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+<div id="LS-4730" style="color:black">
+  <h2>Technical Specifications Fiber Coupled LED Light source LS-4730</h2>
+  <table>
+    <tr> <th>Parameter</th> <th>Specification</th> </tr>
+    <tr> <td>Software Selectable LED wavelength: Range</td> <td>400 - 700nm</td> </tr>
+    <tr> <td>LED FWHM </td> <td>25-30nm</td> </tr>
+    <tr> <td>Software Controlled Intensity </td> <td>0 - 100%</td> </tr>
+    <tr> <td>Fiber Connector </td> <td>SMA905</td> </tr>
+    <tr> <td>Interface </td> <td>USB-C</td> </tr>
+  </table>
+</div>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> 
+<footer>
+   <br> <br>
+   <p style="font:verdana;font-size:1vw;text-align:center">©Copyright 2020 by AIpplica Systems Pte Ltd All Rights Reserved.</p>
+</footer>
+</body>
+</html>

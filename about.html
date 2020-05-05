@@ -1,48 +1,158 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name=" About Aipplica Systems Pte Ltd Page" content="About Aipplica Spectroscopy Products">
-    <meta name="keywords" content="Spectroscopy, Artificial Intelligence,Internet of Things">
-    <meta name="author" content="Rajan Walia">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <style>
-  body { background-image: url(Rainbow-2.jpeg); color: white; background-size: cover; background-repeat: no-repeat;}
-  #s1 h1 { font-size: 2vw; float: left; width: 30vw }
-  #s1 ul { font-size: 1.5vw; float: left; width: 50vw}
-  p  { font-size: 1.2vw; }
-  #features {font-size: 1vw; }
-  #s2 ul { width 40%;  font-size: 1vw; style:list-style-type:disc; float: left} 
-  #s2 img { width: 15%; height: auto; float: left;}
-  section:after { content: ""; display: table; clear: both; }
-  #nav { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: light blue; }
-  #nav li { float: left; }
-  #nav li a { display: block; color: white; text-align: center; padding: 1vw; text-decoration: none; }
-  #nav li a:hover { background-color: blue; }
-  </style>
-  <body>
-  <section id="s1">
-    <h1>AIpplica Systems Pte Ltd </h1>
-    <ul id="nav">
-  	<li><a href="index.html">Home</a></li>
-  	<li><a href="products.html">Products</a></li>
-  	<li><a href="applications.html">Applications</a></li>
-  	<li><a href="contact.html">Contact</a></li>
-  	<li><a href="about.html">About</a></li>
-   </ul>
-   </section>
-   <h2>About the Company</h2>
-   <p>Aipplica Systems was founded in Feb 2018. Company is focussed on the development of Embedded-Opto-Electronic Systems and related core technolgies. Aipplica works with partners and collaborators, to bring new products & technologies to the market.</p>
-   <p>Our focus today is on developing platform and core technology for spectroscopic applications.</p>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-    <br> <br> <br> <br> <br> <br> 
-    <footer>
-      <br> <br>
-      <p style="font:verdana;font-size:1vw;text-align:center">©Copyright 2020 by AIpplica Systems Pte Ltd All Rights Reserved.</p>
-    </footer>
-  </body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="Aipplica Spectroscopy Home Page" content="About Aipplica Spectroscopy Products">
+<meta name="keywords" content="Spectroscopy, Artificial Intelligence,Internet of Things">
+<meta name="author" content="Rajan Walia">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* body { font-family: Arial, Helvetica, sans-serif; } */
+body { background-image: url(Rainbow-2.jpeg); color: white; background-repeat: no-repeat; background-size: cover;}
+
+.header { float: left; width: 28%; }
+section {overflow: auto}
+section:after { content: ""; clear: left }
+
+.navbar { overflow: hidden; float:left; width:68% }
+.navbar a { float: left; font-size: 16px; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+.dropdown { float: left; overflow: hidden; }
+.dropdown .dropbtn { font-size: 16px;  border: none; outline: none; color: white; padding: 14px 16px; background-color: inherit; font-family: inherit; margin: 0; }
+.navbar a:hover, .dropdown:hover .dropbtn { background-color: blue; }
+.dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+.dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+.dropdown-content a:hover { background-color: #ddd; }
+.dropdown:hover .dropdown-content { display: block; }
+
+nav { float: left; width: 20%; height: 200px; padding: 20px; }
+article { float: left; padding: 20px; width: 70%; height: 200px; }
+section:after { content: ""; display: table; clear: both; }
+
+.row {margin-left: 10% }
+.spacer {float: left; width:40%; height: 400px}
+.description {float: left; width: 40%; text-align: justify; height:380px; padding: 10px }
+.row:after { content: ""; display: table; clear: both; }
+
+</style>
+</head>
+<body>
+
+<section>
+  <div class="header"> <h3> AIpplica Systems Pte Ltd <h3></div>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="products.html#APS-1910">APS-1910</a>
+        <a href="products.html#APS-2030">APS-2030</a>
+        <a href="products.html#LS-4730">LS-4730</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Applications 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="applications.html#A1">Food and Beverage</a>
+        <a href="applications.html#A2">Cosmetics</a>
+        <a href="applications.html#A3">Semiconductor Manufacturing</a>
+      </div>
+    </div> 
+    <a href="contact.html">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">About 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="about.html#History">History</a>
+        <a href="about.html#Vision">Vision</a>
+        <a href="about.html#Mission">Mission</a>
+        <a href="about.html#Values">Values</a>
+        <a href="about.html#Business">Business</a>
+      </div>
+    </div> 
+  </div>
+</section>
+
+<p>Spectrometry Modules.</p>
+
+<section id="History" class="row">
+<div class="spacer">
+ <img src="startup.jpg" alt="Prof Dieter Trau's Image" style="width:100%;height:100%"> 
+</div>
+
+<div class="description">
+  <h3>History</h3>
+  <p>Aipplica Systems was founded in Singapore in 2018. The company aims to make optoelectronic systems accessible to the global consumers at an affordable price. 
+
+  <p>Innovation at Aipplica Systems, from concept to production, is driven by a dedicated team of partners from multiple disciplines: engineers, chemists, physicists, business & marketing professionals with proven track record in bringing products to marketplace.</p>
+
+</div>
+</section>
+
+<section id="Vision" class="row">
+<div class="description">
+  <h3>Vision</h3>
+  <p>Our vision is to become one of the leading consumer optoelectronics systems company.</p>
+</div>
+
+<div class="spacer">
+ <img src="summit.jpg" alt="Vision Image" style="width:100%;height:100%"> 
+</div>
+</section>
+
+<section id="Mission" class="row">
+<div class="spacer">
+ <img src="trek.jpg" alt="Mission Image" style="width:100%;height:100%"> 
+</div>
+<div class="description">
+  <h3>Mission</h3>
+<p>Our mission is to develop novel and innovative optoelectronic systems which are available and affordable for key market segments.</p>
+  <p>– Research & Education</p>
+  <p>– Food & Beverage</p>
+  <p>– Biomedical Sciences</p>
+  <p>– Chemical and Pharmaceutical</p>
+  <p>– Industrial </p>
+  <p>– Environmetal</p>
+</div>
+</section>
+
+<section id="Values" class="row">
+<div class="description">
+  <h3>Values</h3>
+  <p>Innovation</p>
+  <p>Aipplca Systems believes in innovation and research to provide the best solution.</p>
+  <p>Quality</p>
+  <p>Aipplica Systems is committed to providing high quality products and services.</p>
+  <p>People</p>
+  <p>Aipplica Systems believes in mutual respect, team-work, continuous learning and innovation to drive forward.</p>
+</div>
+<div class="spacer">
+ <img src="teamwork.jpg" alt="Values Image" style="width:100%;height:100%"> 
+</div>
+</section>
+
+<section id="Business" class="row">
+<div class="spacer">
+ <img src="handshake.jpg" alt="Business Image" style="width:100%;height:100%"> 
+</div>
+<div class="description">
+  <h3>Business</h3>
+  <p>Aipplica Systems is serving a multi-billion optoelectrical systems market with a high single digit CAGR.
+  <p>
+</div>
+</section>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> 
+<footer>
+   <br> <br>
+   <p style="font:verdana;font-size:1vw;text-align:center">©Copyright 2020 by AIpplica Systems Pte Ltd All Rights Reserved.</p>
+</footer>
+</body>
 </html>

@@ -1,61 +1,126 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="Aipplica Spectroscopy Application Page" content="About Aipplica Spectroscopy Products">
-    <meta name="keywords" content="Spectroscopy, Artificial Intelligence,Internet of Things">
-    <meta name="author" content="Rajan Walia">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <style>
-  body { background-image: url(Rainbow-2.jpeg); color:rgb(255,255,255); background-repeat: no-repeat; background-size: cover; }
-  #s1 h1 { font-size: 2vw; float: left; width: 30vw }
-  #s1 ul { font-size: 1.5vw; float: left; width: 50vw}
-  h2 { font-size: 1.5vw }
-  p  { font-size: 1vw; }
-  #features {font-size: 1vw; }
-  #nav { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: light blue; }
-  #nav li { float: left; }
-  #nav li a { display: block; color: white; text-align: center; padding: 1vw; text-decoration: none; }
-  #nav li a:hover { background-color: blue; }
-  .app h3 { font-size: 1.5vw }
-  .app img { float:left; width:10%  }
-  .app p { float:center; width:50% ; text-align: justify; font-size: 1.2vw }
-  .app:after {clear:both}
-  </style>
-  <body>
-  <section id="s1">
-    <h1>AIpplica Systems Pte Ltd </h1>
-    <ul id="nav">
-  	<li><a href="index.html">Home</a></li>
-  	<li><a href="products.html">Products</a></li>
-  	<li><a href="applications.html">Applications</a></li>
-  	<li><a href="contact.html">Contact</a></li>
-  	<li><a href="about.html">About</a></li>
-   </ul>
-   </section>
-   <br><br>
-   <br><br>
-   <h2>Examples of Applications </h2>
-   <br><br>
-   <section class="app">
-	<h3>Cosmetics: Measuring Quality of Fragrance Oils</h3>
-    	<img src="Perfume-1.jpg" alt="Perfume Bottle">
-        <p>High value Perfume oils are a profitable target for counterfeiters. Lower quality counterfeits are often sold at lower cost on various platforms. A test with spectrometer measuring light absorbance can determine if the spectral signature of perfume really matches the proprietary reference composition set by the company. Genuine Perfume oils have distinctive peaks at specific wavelengths  which can differ considerably in intensity and wavelength from adulterated oils. This simple method can distinguish pure perfume oils from counterfeit products.</p> 
-   </section>
-    <br> <br>
-   <section class="app">
-	<h3>Food and Beverage: Quality Assurance of Wines</h3>
-    	<img src="Wine-1.jpg" alt="Wine Bottle">
-        <p>Spectral signature of absorbed light can help determine the quality and age of a wine. Winemakers use spectrometers  to measure the properties of their wine and prevent potential problems. Chemical composition has a major effect on the notes and tone of the final product, spectrometers can objectively measure the signature of various chemicals in wine and provide an feedback for winemakers.</p>
-   </section>
-    <br> <br>
-   <section class="app">
-	<h3>Industrial : End point detection in Semiconductor processing</h3>
-    	<img src="Plasma-1.jpg" alt="Wine Bottle">
-        <p>In Semiconductor Industry, during Plasma etching process, reactant products related to removal of etched layer produce characteristic spectral lines in the plasma glow, which are used to determine status or progress of the plasma etching process. For example, during SiO<sub>2</sub> etch by CHF<sub>3</sub> and Ar, prominent spectral lines are produced by CO, CO<sub>2</sub>, OH, SiF<sub>2</sub> and SiO. By monitoring presence of these lines we can monitor progress of the process.
-   </section>
-    <br><br><br> <br> <br> <br> <br> <br> <br>
-    <br><br><br> <br> <br> <br> <br> <br> <br>
-  </body>
-</html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="Aipplica Spectroscopy Home Page" content="About Aipplica Spectroscopy Products">
+<meta name="keywords" content="Spectroscopy, Artificial Intelligence,Internet of Things">
+<meta name="author" content="Rajan Walia">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* body { font-family: Arial, Helvetica, sans-serif; } */
+body { background-image: url(Rainbow-2.jpeg); color: white; background-repeat: no-repeat; background-size: cover;}
 
+.header { float: left; width: 28%; }
+section {overflow: auto}
+section:after { content: ""; clear: left }
+
+.navbar { overflow: hidden; float:left; width:68% }
+.navbar a { float: left; font-size: 16px; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+.dropdown { float: left; overflow: hidden; }
+.dropdown .dropbtn { font-size: 16px;  border: none; outline: none; color: white; padding: 14px 16px; background-color: inherit; font-family: inherit; margin: 0; }
+.navbar a:hover, .dropdown:hover .dropbtn { background-color: blue; }
+.dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+.dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+.dropdown-content a:hover { background-color: #ddd; }
+.dropdown:hover .dropdown-content { display: block; }
+
+.app { border: 3px solid green; padding: 5px; overflow: auto }
+.app-header { padding: 10px; text-align: center; font-size: 20px; color: white; }
+.app-img { float: left; width: 100%; height: 200px; border-radius:10px }
+.app-text { text-align: justify }
+.app:after { content: ""; clear: both; display: table; }
+
+.heading { border: 3px solid green; padding: 10px; text-align: center; font-size: 35px; color: white; overflow: auto }
+nav { float: left; width: 20%; height: 200px; padding: 20px; }
+article { float: left; padding: 20px; width: 70%; height: 200px; }
+section:after { content: ""; display: table; clear: both; }
+
+</style>
+</head>
+<body>
+
+<section>
+  <div class="header"> <h3> AIpplica Systems Pte Ltd <h3></div>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products </button>
+      <div class="dropdown-content">
+        <a href="products.html#APS-1910">APS-1901</a>
+        <a href="products.html#APS-2030">APS-2030</a>
+        <a href="products.html#LS-4730">LS-4730</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Applications </button>
+      <div class="dropdown-content">
+        <a href="applications.html#A1">Food and Beverage</a>
+        <a href="applications.html#A2">Cosmetics</a>
+        <a href="applications.html#A3">Semiconductor Manufacturing</a>
+      </div>
+    </div> 
+    <a href="contact.html">Contact</a>
+    <div class="dropdown">
+      <button class="dropbtn">About </button>
+      <div class="dropdown-content">
+        <a href="about.html">History</a>
+        <a href="about.html">Vision</a>
+        <a href="about.html">Mission</a>
+        <a href="about.html">Values</a>
+        <a href="about.html">Business</a>
+      </div>
+    </div> 
+  </div>
+</section>
+
+<p>Spectrometry Modules.</p>
+
+<div class="heading" >
+  <h2 id="A1" class="app-header">Cosmetics: Measuring Quality of Fragrance Oils</h3>
+</div>
+<section>
+  <nav>
+    <img class="app-img" src="Perfume-1.jpg" alt="Perfume Bottle">
+  </nav>
+  <article>
+    <p class="app-text">High value Perfume oils are a profitable target for counterfeiters.  Lower quality counterfeits are often sold at lower cost on various platforms.</p> 
+    <p>A test with spectrometer measuring light absorbance can determine if the spectral signature of perfume really matches the proprietary reference composition set by the company. Genuine Perfume oils have distinctive peaks at specific wavelengths  which can differ considerably in intensity and wavelength from adulterated oils.</p>
+    <p> This simple method can distinguish pure perfume oils from counterfeit products.</p> 
+  </article>
+</section>
+
+<div class="heading" >
+  <h2 id="A2" class="app-header">Food and Beverage: Quality Assurance of Wines</h2>
+</div>
+<section>
+  <nav>
+    <img class="app-img" src="Wine-1.jpg" alt="Wine Bottle">
+  </nav>
+  <article>
+    <p class="app-text">Spectral signature of absorbed light can help determine the quality and age of a wine. Winemakers use spectrometers  to measure the properties of their wine and prevent potential problems.</p> <p> Chemical composition has a major effect on the notes and tone of the final product, spectrometers can objectively measure the signature of various chemicals in wine and provide feedback to winemakers.</p>
+  </article>
+</section>
+
+<div class="heading" >
+  <h2 id="A3" class="app-header">Industrial: End point detection in Semiconductor processing</h2>
+</div>
+<section>
+  <nav>
+    <img class="app-img" src="Plasma-1.jpg" alt="Wine Bottle">
+  </nav>
+  <article>
+    <p class="app-text">In Semiconductor Industry, during Plasma etching process, reactant products related to removal of etched layer produce characteristic spectral lines in the plasma glow, which are used to determine status or progress of the plasma etching process.</p> <p> For example, during SiO<sub>2</sub> etch by CHF<sub>3</sub> and Ar, prominent spectral lines are produced by CO, CO<sub>2</sub>, OH, SiF<sub>2</sub> and SiO. By monitoring presence of these lines we can monitor progress of the process.
+  </article>
+</section>
+
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<br> <br> <br> <br> <br> <br> <br> <br> 
+<footer>
+   <br> <br>
+   <p style="font:verdana;font-size:1vw;text-align:center">©Copyright 2020 by AIpplica Systems Pte Ltd All Rights Reserved.</p>
+</footer>
+</body>
+</html>

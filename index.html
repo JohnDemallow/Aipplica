@@ -1,104 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<meta name="Aipplica Spectroscopy Home Page" content="About Aipplica Spectroscopy Products">
-<meta name="keywords" content="Spectroscopy, Artificial Intelligence,Internet of Things">
-<meta name="author" content="Rajan Walia">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home</title>
-<style>
-/* body { font-family: Arial, Helvetica, sans-serif; } */
-body { background-image: url(Rainbow-2.jpeg); color: white; background-repeat: no-repeat; background-size: cover;}
-
-.header { float: left; width: 28%; }
-section {overflow: auto}
-section:after { content: ""; clear: left }
-
-.navbar { overflow: hidden; float:left; width:68% }
-.navbar a { float: left; font-size: 16px; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
-.dropdown { float: left; overflow: hidden; }
-.dropdown .dropbtn { font-size: 16px;  border: none; outline: none; color: white; padding: 14px 16px; background-color: inherit; font-family: inherit; margin: 0; }
-.navbar a:hover, .dropdown:hover .dropbtn { background-color: blue; }
-.dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
-.dropdown-content a { float: none; color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
-.dropdown-content a:hover { background-color: #ddd; }
-.dropdown:hover .dropdown-content { display: block; }
-
-.img-container-small { grid-column: 1; grid-row: 1;  }
-.img-container-big { grid-column:2 / span 2; grid-row: 1 / span 2; }
-.description { grid-column: 1; grid-row: 2;  text-align: justify; color: white }
-.grid-container { display: grid; grid-template-columns: 300px 300px 300px 300px; grid-gap: 10px; margin-left: 10% }
-.grid-container::after { content:" "; clear:both;}
-
-</style>
-</head>
-<body>
-
-<section>
-  <div class="header"> <h3> AIpplica Systems Pte Ltd <h3></div>
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">Products </button>
-      <div class="dropdown-content">
-        <a href="products.html#APS-1910">APS-1901</a>
-        <a href="products.html#APS-2030">APS-2030</a>
-        <a href="products.html#LS-4730">LS-4730</a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="Aipplica Spectroscopy Home Page" content="About Aipplica Spectroscopy Products">
+    <meta name="keywords" content="Spectroscopy, Artificial Intelligence,Internet of Things">
+    <meta name="author" content="Rajan Walia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+  #body { background-image: url(Rainbow-2.jpeg); white: black; background-repeat: no-repeat; background-size: cover;}
+  body {  color: black; background-repeat: no-repeat; background-size: cover;}
+  #s1 h1 { font-size: 2vw; float: left; width: 30vw }
+  #s1 ul { font-size: 1.5vw; float: left; width: 50vw}
+  p  { text-align: center; font-size: 1.5vw; }
+  .img-container { float:left;width:25%;padding:5px }
+  .clearfix::after { content:" "; clear:both;}
+  section:after { content: ""; display: table; clear: both; }
+  #nav { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: light blue; }
+  #nav li { float: left; }
+  #nav li a { display: block; color: black; text-align: center; padding: 1vw; text-decoration: none; }
+  #nav li a:hover { background-color: blue; }
+  </style>
+  <body>
+  <section id="s1">
+    <h1>AIpplica Systems Pte Ltd </h1>
+   </section>
+    <br> 
+    <p><b><a href="contact.html">Ask for a Demo </b></p>
+    <br> <br> 
+    <div class="clearfix">
+      <div class="img-container">
+      </div>
+      <div class="img-container">
+		<a href="contact.html"</a>
+		<img src="APS2148.jpg" alt="Spectrometer Module" style="width:400px;height:400px" >
+      </div>
+      <div class="img-container">
+		<a href="contact.html"</a>
+		<img src="AipplicaSW.png" alt="Graphical User Interface"  style="width:400px;height:400px">
       </div>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Applications </button>
-      <div class="dropdown-content">
-        <a href="applications.html#A1">Food and Beverage</a>
-        <a href="applications.html#A2">Cosmetics</a>
-        <a href="applications.html#A3">Semiconductor Manufacturing</a>
-      </div>
-    </div> 
-    <a href="contact.html">Contact</a>
-    <div class="dropdown">
-      <button class="dropbtn">About </button>
-      <div class="dropdown-content">
-        <a href="about.html#History">History</a>
-        <a href="about.html#Vision">Vision</a>
-        <a href="about.html#Mission">Mission</a>
-        <a href="about.html#Values">Values</a>
-        <a href="about.html#Business">Business</a>
-      </div>
-    </div> 
-  </div>
-</section>
-
-<h2>Aipplica Spectrometry Solutions.</h2>
-<p style="text-align:justify">Aipplica Systems designs and builds Embedded Optoelectronic System Solutions. We make high quality, robust, handheld  Spectrometers & Spectrophotometers & accessories to realize a complete solution for customer application. Spectrometer User interface software supports various analyses on captured spectrum such as measuring irradiance, absorbance, reflected spectrum, chemical constituent analysis and more. Captured spectral data is provided as plain text file, giving user complete flexibility for further spectrometric analysis by 3rd party tools. We customize our devices to customer requirements by selecting and designing with the most appropriate components and subsystems for the application. </p>
-
-    <div class="grid-container">
-      <div class="img-container-small">
-		<a href="products.html"</a>
-		<fig>
-		<img src="APSpec0p1.jpg" alt="APS190 Module" style="width:300px;height:300px">
-		<figcaption style="color:white">APS-1910 Spectrometer </figcaption>
-		</fig>
-      </div>
-      <div class="img-container-big">
-		<a href="products.html"</a>
-		<fig>
-		<img src="AipplicaSW.png" alt="GUI" style="width:600px;height:600px" >
-		<figcaption style="color:white;text-align:left">Spectrum Capture and Analysis Graphical User Interface</figcaption>
-		</fig>
-      </div>
-      <div class="description">
-		<p> Small sized APS-1910 spectrometer plugs into USB-C port and a User friendly interface software makes easy work of capturing and analyzing spectra.</p>
-      </div>
-    </div>
-
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-<br> <br> <br> <br> <br> <br> <br> <br> 
-<footer>
-   <br> <br>
-   <p style="font:verdana;font-size:1vw;text-align:center">©Copyright 2020 by AIpplica Systems Pte Ltd All Rights Reserved.</p>
-</footer>
-</body>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <p><b>Spectrometry Modules </b></p>
+    <footer>
+      <br> <br>
+      <p style="font:verdana;font-size:1vw;text-align:center">©Copyright 2021 by AIpplica Systems Pte Ltd All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>

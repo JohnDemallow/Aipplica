@@ -15,7 +15,7 @@ Ref_Data=[]
 # Capture Reference Spectra or "Dark Signal" from the Spectrometer
 # Switch off the light signal or cover the exposed fiber connector with a dustcap.
 # If your device has a slit, cover the input so as to block any ambient light. 
-# Do not touch the slit opening with you hands. 
+# Do not touch the slit opening with your hands. 
 Ref_Data=Spec.GetSpectra()
 
 # Examine the first few element of captured spectral data. If the light path is blocked properly, expect values in 800 +/- 50 range.
@@ -30,16 +30,13 @@ pyplot.show()
 # Turn the light source ON and capture the data from Spectrometer
 Spectral_Data=[]
 
-# Reset Integration time, if needed
-Spec.Setinttime(0.020)
-
 # MAKE SURE THE LIGHT SOURCE is ON
 Spectral_Data=Spec.GetSpectra()
 
 # Substract the Reference reading from the captured Spectra
 Difference = [(Ref_Data[i]-Spectral_Data[i]) for i in range(len(Ref_Data))]
 
-#plot the DIfference
+#plot the Difference
 pyplot.plot(Difference)
 pyplot.show()
 

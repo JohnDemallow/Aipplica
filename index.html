@@ -1,39 +1,185 @@
-<!DOCTYPE html>
+<!DOCTYPE html<
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="Aipplica Spectroscopy Home Page" content="About Aipplica Spectroscopy Products">
-    <meta name="keywords" content="Spectroscopy, Photometry, Python, Artificial Intelligence, Internet of Things">
-    <meta name="author" content="John Demallow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <style>
-  body {  color: black; background-repeat: no-repeat; background-size: cover;}
-  .heading  { margin:30px; padding:10px; text-align: justify; font-size:1.0vw; height:4vw; }
-  .footing  { margin:30px; padding:10px; text-align: center; font-size:1.0vw; height:1vw; }
-  .img-container { float:left; }
-  .clearfix {  margin-left:100px; }
-  .clearfix::after { content:" "; clear:both;}
-  </style>
-  <body>
-    <h1>AIpplica Systems Pte Ltd </h1>
-    <p class="heading">Applica Systems makes low-cost Python Spectrometery modules for Education, Makers & Hobbyists. Plug the module into the USB port of your laptop like a thumb drive, download and install python driver in Linux, illuminate the input slit with a light source or connect optical signal to SMA connector using the 50um optical fiber provided, and you are ready to capture spectral data array. Visualize it with matplotlib, or experiment with your own algorithms. We make it easy to users to focus on developing their application specific spectral data processing algorithms in Python </p>
-    <p class="footing"><b><a href="contact.html">Ask for a Demo </b></p>
-    <div class="clearfix" >
-      <div class="img-container" style=height:20vw; width:16vw;" >
-		<a href="contact.html"</a>
-		<img src="APS2148.jpg" alt="Spectrometer Module" style="height:20vw; width:16vw">
+<head>
+<style>
+body { font-family: Roboto, sans-serif; color: #595656; font-weight: 300; font-size: 1vw; line-height: 1.625; }
+ul { list-style-type: none; margin: 0; padding: 0; min-height: 48px; background-color: #333; }
+
+li { float: right; }
+li a, .dropbtn { display: inline-block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+li a:hover, .dropdown:hover .dropbtn { background-color: red; }
+li.dropdown { display: inline-block; }
+
+.dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; }
+
+.dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left; }
+.dropdown-content a:hover { background-color: #f1f1f1; }
+
+.dropdown:hover .dropdown-content { display: block; }
+.heading  { color: black; margin-left:5%; width:80%; padding:10px; text-align: justify; font-weight: 300; font-size:1.0vw; height:8vw; }
+
+div.main { margin-left: 5%; width: 80%; }
+div.intro { margin-left: 5%; width: 80%; height: 450px; }
+div.main::after { content: ""; clear: both; display: table; }
+.img-container { float: left; }
+
+div.gallery { margin-left: 5%; width: 80%; height: 500px; }
+div.gallery-item { position: relative; margin: 1vw; border: 2px solid #ccc; float: left;  width: 13vw; height:20vw; }
+div.gallery-item:hover { border: 1px solid #777; }
+div.gallery-item img { width: 100%; height: 80%; }
+div.prod-ovly { position: absolute; top: 0; left:0; width: 100%; height: 100%; background: rgba(0,0,0, 0.6); 
+                color: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; transition: opacity: 0.25s;}
+div.prod-ovly:hover { opacity: 1; }
+div.desc { padding: 15px; text-align: center; }
+
+.butn { position: relative; left: 40%; background-color: lightgray; color: black; border-radius: 10px; 
+	padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; 	
+	margin: 4px 2px; cursor: pointer; }
+.fbutn { position: relative; left: 10%; background-color: lightgray; color: black; border-radius: 10px; 
+	padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; 	
+	margin: 4px 2px; cursor: pointer; }
+
+ .cform { margin-left: 5%; style="font-size:1.5vw"}
+.footer { position: fixed: left:0; bottom:0; font-size:1vw; text-align:center; }
+
+.debug { border: 2px solid Tomato; }
+
+</style>
+</head>
+<body>
+<h1 id="H0">AIpplica Systems Pte Ltd</h1>
+
+<div class="navbar" style="position: sticky; top: 0;">
+    <ul class="navbar">
+       <li class="dropdown"><a href="#Downloads" class="dropbtn">Downloads</a>
+         <div class="dropdown-content">
+           <a href="#D0">Python Script</a>
+           <a href="#D0">Jupyter Notebook</a>
+           <a href="#D0">Python Driver</a>
+         </div>
+       </li>
+       <li class="dropdown"><a href="#Documents" class="dropbtn">Documents</a>
+         <div class="dropdown-content">
+           <a href="#D1">Installation Guide</a>
+         </div>
+       </li>
+       <li class="dropdown"><a href="#products" class="dropbtn">Products</a>
+         <div class="dropdown-content">
+           <a href="#P0">Educational Spectrometer</a>
+           <a href="#P0">Cuvette holder</a>
+           <a href="#P0">SMA Fiber Optic Cables</a>
+         </div>
+       </li>
+       <li><a href="#H0">Home</a></li>
+    </ul>
+</div>
+
+<div class="heading ">
+<p>AIpplica Systems makes low-cost Easy-to-Use Python Spectrometery modules for Educators, Makers & Hobbyists. Plug the module into the USB port of your laptop, download and install python driver in Linux. Illuminate the input slit or connect optical signal to SMA connector using the optical fiber provided. Capture spectral data array and visualize it with matplotlib, or experiment with your own algorithms. We make it easy for users to focus on developing their application specific spectral data processing algorithms in Python </p>
+</div>
+
+<div class="intro ">
+  <div class="img-container">
+    <a target="_blank" href="./APS2148.jpg"></a><img src="APS2148.jpg" alt="APS2148" style="width:16vw; height:20vw;">
+    <div class="desc">APS2148 Spectrometer</div>
+  </div>
+  <div class="img-container" style="width:48vw; height:20vw; overflow:scroll"> 
+    <a target="_blank" href="./DemoA.png"></a><img src="DemoA.png" alt="DemoA">
+    <div class="desc">Jupyter Notebook</div>
+  </div>
+</div>
+
+<h2 id="P0">Products</h2>
+<div class="gallery ">
+  <p>Our Products: AIpplica Spectrometers, SMA905 Fiber optic chords, Cuvette and Cuvette Holder are ready for sale. The Spectrometers is our main product. The Cuvettes, Cuvette Holder, Fiber optic chords are needed to put together the complete Spectrometry Test System</p>
+  <div class="gallery-item">
+    <a target="_blank" href="./APS2148.jpg"> </a>
+      <img class="prod-img" src="APS2148.jpg" alt="APS2148 Spectrometer" width="600" height="400">
+      <div class="prod-ovly">
+        <div class="prod-ovly-title">Spectrometer</div>
+        <p class="prod-ovly-desc">$190 USD</p>
       </div>
-      <div class="img-container" style="height:20vw; width:48vw; overflow:scroll;">
-		<a href="contact.html"</a>
-		<img src="DemoA.png" alt="Jupyter Notebook" >
+    <div class="desc">APS2148 Spectrometer</div>
+  </div>
+
+  <div class="gallery-item">
+    <a target="_blank" href="./CuvetteHolder.jpeg"> <img src="CuvetteHolder.jpeg" alt="CuvetteHolder" width="600" height="400"></a>
+      <div class="prod-ovly">
+        <div class="prod-ovly-title">CuvetteHolder</div>
+        <p class="prod-ovly-desc">$90 USD</p>
       </div>
-    </div>
-    <br> <br> <br> <br> <br> <br> <br> 
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-    <p class="footing"><b>Spectrometry Modules </b></p>
-    <footer>
-      <p class="footing" style="font:verdana;font-size:1vw;text-align:center">©Copyright 2022 by AIpplica Systems Pte Ltd All Rights Reserved.</p>
-    </footer>
-  </body>
+    <div class="desc">Cuvette Holder</div>
+  </div>
+
+  <div class="gallery-item">
+    <a target="_blank" href="./SMAGL50um.jpeg"> <img src="SMAGL50um.jpeg" alt="SMA Cable" width="600" height="400"></a>
+      <div class="prod-ovly">
+        <div class="prod-ovly-title">SMA905 FiberOpticChord</div>
+        <p class="prod-ovly-desc">$40 USD</p>
+      </div>
+    <div class="desc">SMA905 FiberOptic Chord Glass 50um</div>
+  </div>
+
+  <div class="gallery-item">
+    <a target="_blank" href="./CuvetteFilled.jpeg"> <img src="CuvetteFilled.jpeg" alt="Cuvettes" width="600" height="400"></a>
+      <div class="prod-ovly">
+        <div class="prod-ovly-title">Polystyrene Cuvette Pack-of-5</div>
+        <p class="prod-ovly-desc">$10 USD</p>
+      </div>
+    <div class="desc">Polystyrene Cuvette</div>
+  </div>
+
+  <div class="gallery-item">
+    <a target="_blank" href="./SMAPL1mm.jpeg"> <img src="SMAPL1mm.jpeg" alt="Platic Cable" width="600" height="400"></a>
+      <div class="prod-ovly">
+        <div class="prod-ovly-title">SMA905 FiberOpticChord </div>
+        <p class="prod-ovly-desc">$30 USD</p>
+      </div>
+    <div class="desc">SMA905 FiberOptic Chord Polymer 1mm</div>
+  </div>
+</div>
+
+<h2></h2>
+<button class="butn"><a href="#contact">Order<a></button>
+
+<h2 id="D0" class="">Downloads</h2>
+<div class="main ">
+<p>Linux Driver for APS Spectrometers</p>
+<p><b><a href="./APSpec-0.1-py3-none-any.whl" download>APSpec-0.1-py3-none-any.whl</a></b></p>
+<p>Example python code for capturing and processing Raw Spectra</p>
+<p><b><a href="./DemoA.py" download>DemoA.py</a></b></p>
+<p>Example Jupyter notebook for capturing and processing Raw Spectra</p>
+<p><b><a href="./DemoA.ipynb" download>DemoA.ipynb</a></b></p>
+</div>
+
+<h2 id="D1">Documents</h2>
+<div class="main">
+<p>Installation Instructions</p>
+<p><b><a href="InstallationGuide.pdf" download>InstallationGuide.pdf</a></b></p>
+</div>
+<h2 id="contact"> Contact Us</h2>
+<p style="margin-left:5%;">For Enquiries, Ordering, Custom Requirements or any other question, Please drop us a note.</p>
+ <form class="cform" accept-charset="UTF-8" action="https://usebasin.com/f/e223d408355d" enctype="multipart/form-data" method="POST" >
+        Name:<br>
+        <input type="text" name="name" size="50" style="font:Roboto;font-size:1vw">
+        <br>
+        Email Address:<br>
+        <input type="text" name="email" size="50" style="font:Roboto;font-size:1vw">
+        <br>
+        Message:<br>
+        <textarea name="message" rows="20" cols="50" style="font:Roboto;font-size:1vw"></textarea>
+        <br>
+        <input type="text" name="foo" style="display: none;">
+        <br> <br>
+        <input class="fbutn" type="Submit" value="Send">
+        <input class="fbutn "type="reset">
+ </form>
+
+
+<footer>
+   <p class="footing" style="font:Roboto;font-size:1vw;text-align:center">©Copyright 2022 by AIpplica Systems Pte Ltd All Rights Reserved.</p>
+</footer>
+
+</body>
 </html>

@@ -12,11 +12,11 @@
 <style>
 body { font-family: Roboto, sans-serif; color: #595656; font-weight: 300; font-size: 1vw; line-height: 1.625; }
 
-ul { list-style-type: none; margin: 0; padding: 0; min-height: 48px; background-color: #333; }
+ul.navbar { list-style-type: none; margin: 0; padding: 0; min-height: 48px; background-color: #333; }
 
-li { float: right; }
-li a, .dropbtn { display: inline-block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
-li a:hover, .dropdown:hover .dropbtn { background-color: red; }
+li.dropdown { float: right; }
+li.dropdown a.dropdown-item, .dropbtn { display: inline-block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+li.dropdown a.dropdown-item:hover, .dropdown:hover .dropbtn { background-color: red; }
 li.dropdown { display: inline-block; }
 
 .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 160px;
@@ -49,8 +49,15 @@ div.desc { padding: 15px; text-align: center; }
 	padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; 	
 	margin: 4px 2px; cursor: pointer; }
 
- .cform { margin-left: 5%; style="font-size:1.5vw"}
-.footer { position: fixed: left:0; bottom:0; font-size:1vw; text-align:center; }
+ .cform { margin-left: 5%; font-size:1.5vw}
+
+p.footer { clear: both; position: fixed: left:0; bottom:0; font-size:1vw; text-align: center; font:Roboto; }
+
+.footer-link-list-container { margin-left: 5%; height : 250px; }
+.footer-link-list { float: left; width: 10% }
+.footer-link-list-links { list-style: none; padding-left: 0; }
+.footer-link-list-links-item-anchor { text-decoration: none; color: black; text-align: left; }
+.footer-link-list-container:clearfix { content: ""; display: table; clear: both; }
 
 .debug { border: 2px solid Tomato; }
 
@@ -62,26 +69,31 @@ div.desc { padding: 15px; text-align: center; }
 
 <div class="navbar" style="position: sticky; top: 0;">
     <ul class="navbar">
+       <li class="dropdown"><a href="#products" class="dropbtn">Contact</a>
+         <div class="dropdown-content">
+           <a class=dropdown-item" href="#C0">Contact Us</a>
+         </div>
+       </li>
        <li class="dropdown"><a href="#Downloads" class="dropbtn">Downloads</a>
          <div class="dropdown-content">
-           <a href="#D0">Python Script</a>
-           <a href="#D0">Jupyter Notebook</a>
-           <a href="#D0">Python Driver</a>
+           <a class=dropdown-item" href="#D0">Python Script</a>
+           <a class=dropdown-item" href="#D0">Jupyter Notebook</a>
+           <a class=dropdown-item" href="#D0">Python Driver</a>
          </div>
        </li>
        <li class="dropdown"><a href="#Documents" class="dropbtn">Documents</a>
          <div class="dropdown-content">
-           <a href="#D1">Installation Guide</a>
+           <a class=dropdown-item" href="#D1">Installation Guide</a>
          </div>
        </li>
        <li class="dropdown"><a href="#products" class="dropbtn">Products</a>
          <div class="dropdown-content">
-           <a href="#P0">Educational Spectrometer</a>
-           <a href="#P0">Cuvette holder</a>
-           <a href="#P0">SMA Fiber Optic Cables</a>
+           <a class=dropdown-item" href="#P0">Educational Spectrometer</a>
+           <a class=dropdown-item" href="#P0">Cuvette holder</a>
+           <a class=dropdown-item" href="#P0">SMA Fiber Optic Cables</a>
          </div>
        </li>
-       <li><a href="#H0">Home</a></li>
+       <li class="dropdown"><a href="#H0" class="dropbtn">Home</a></li>
     </ul>
 </div>
 
@@ -159,20 +171,20 @@ div.desc { padding: 15px; text-align: center; }
 <br>
 <h2>Downloads</h2>
 <div class="main ">
-<p>Linux Driver for APS Spectrometers</p>
-<p><b><a href="./APSpec-0.1-py3-none-any.whl" download>APSpec-0.1-py3-none-any.whl</a></b></p>
-<p>Example python code for capturing and processing Raw Spectra</p>
-<p><b><a href="./DemoA.py" download>DemoA.py</a></b></p>
-<p>Example Jupyter notebook for capturing and processing Raw Spectra</p>
-<p><b><a href="./DemoA.ipynb" download>DemoA.ipynb</a></b></p>
+  <p>Linux Driver for APS Spectrometers</p>
+  <p><b><a href="./APSpec-0.1-py3-none-any.whl" download>APSpec-0.1-py3-none-any.whl</a></b></p>
+  <p>Example python code for capturing and processing Raw Spectra</p>
+  <p><b><a href="./DemoA.py" download>DemoA.py</a></b></p>
+  <p>Example Jupyter notebook for capturing and processing Raw Spectra</p>
+  <p><b><a href="./DemoA.ipynb" download>DemoA.ipynb</a></b></p>
 </div>
 
 <h2 id="D1"></h2>
 <br>
 <h2>Documents</h2>
 <div class="main">
-<p>Installation Instructions</p>
-<p><b><a href="InstallationGuide.pdf" download>InstallationGuide.pdf</a></b></p>
+  <p>Installation Instructions</p>
+  <p><b><a href="InstallationGuide.pdf" download>InstallationGuide.pdf</a></b></p>
 </div>
 
 <h2 id="contact"></h2>
@@ -195,10 +207,52 @@ div.desc { padding: 15px; text-align: center; }
         <input class="fbutn "type="reset">
  </form>
 
+<div class="footer-link-list-container clearfix">
+          <div class="footer-link-list ">
+              <a class="footer-site-logo-anchor" href="/">
+                <img class="footer-logo-image footer-logo-regular" alt="AIpplica Systems" src="AIlogo.jpg">
+              </a>
+          </div>		
+          <div class="footer-link-list ">
+            <h4 class="footer-title footer-link-list-title">External Links</h4>
+            <ul class="footer-link-list-links">
+              <li class="footer-link-list-links-item">
+                <a class="footer-link-list-links-item-anchor" href="http://groups.google.com/g/apspectra">Google Group</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-link-list ">
+            <h4 class="footer-title footer-link-list-title">Legal info </h4>
+              <ul class="footer-link-list-links ">
+                <li class="footer-link-list-links-item">
+                  <a class="footer-link-list-links-item-anchor" href="AipplicaTnC.pdf" download>Terms of Service</a>
+                </li>
+            </ul>
+          </div>
+          <div class="footer-link-list ">
+            <h4 class="footer-title footer-link-list-title">Social </h4>
+              <ul class="footer-link-list-links">
+                <li class="footer-link-list-links-item">
+                  <a class="footer-link-list-links-item-anchor" href="https://twitter.com/AIpplica">Twitter</a>
+                </li>
+                <li class="footer-link-list-links-item">
+                  <a class="footer-link-list-links-item-anchor" href="https://www.youtube.com/channel/UCEvZMhk6A9MVuYESmUe3ACA">Youtube</a>
+                </li>
+              </ul>
+          </div>
+          <div class="footer-link-list ">
+            <h4 class="footer-title footer-link-list-title">Contact Us </h4>
+	      <p class="footer-quote-content">AIpplica Systems Pte Ltd<br />
+	               UEN201805540W <br />
+	               Singapore <br />
+	               contact@aipplica.com <br />
+	               <br />
+	               <br /><br />
+	      </p>
+          </div>
+</div>							<!--- of footer-link-list-container --->
 
-<footer>
-   <p class="footing" style="font:Roboto;font-size:1vw;text-align:center">©Copyright 2022 by AIpplica Systems Pte Ltd All Rights Reserved.</p>
-</footer>
+<p class="footer" >©Copyright 2022 by AIpplica Systems Pte Ltd All Rights Reserved.</p>
 
 </body>
 </html>

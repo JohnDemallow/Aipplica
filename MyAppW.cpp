@@ -1,4 +1,20 @@
-// SPIApp2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//  Copyright © 2000-2022 Aipplica Systems Pte Ltd
+//  
+//  
+//  THIS SOFTWARE IS PROVIDED BY AIPPLICA SYSTEMS PTE LIMITED ``AS IS'' AND ANY EXPRESS 
+//  OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+//  FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL AIPPLICA SYSTEMS PTE INTERNATIONAL LIMITED
+//  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+//  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+//  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+//  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
+//  THE POSSIBILITY OF SUCH DAMAGE.
+// 
+//  Pre-release Alpha Version. 0.1 dtd 25 Jul 2022
+//
+//  This a sample program to capture and display a Spectrum from Aipplica Spectrometer plugged into USB port
+//  It captures dark signal (with light source Off) and subtracts it from Spectral Signal (light source On)
+//  and displays the result using gnuplot
 //
 #include <stdio.h>
 #include "windows.h"
